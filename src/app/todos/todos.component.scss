@@ -1,0 +1,68 @@
+.todos-wrapper {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.todos-wrapper .container {
+    gap: 15px;
+}
+
+.todo-item {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    padding: 10px;
+    
+    align-items: center;
+
+    background-color: rgba(black, 0.5);
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    &:hover {
+        .todo-text {
+            color: white;
+        }
+
+        .check-box {
+            border-color: transparent;
+            background-color: rgba(white, 0.35);
+        }
+    }
+
+    &.completed {
+
+        .todo-text {
+            color: rgba(white, 0.6)
+        }
+
+        .check-box {
+            background: rgb(0, 218, 89);
+            border-color: transparent;
+
+            i {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.todo-text {
+    color: rgba(white, 0.9);
+    transition: 0.15s;
+}
+
+.check-box {
+    display: flex;
+    padding: 4px;
+    border: 2px solid rgba(white, 0.35);
+    border-radius: 50%;
+
+    i {
+        font-size: 18px;
+        opacity: 0;
+    }
+
+    transition: 0.15s;
+}

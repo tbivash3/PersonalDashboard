@@ -19,3 +19,13 @@ h1 {
 h2 {
     font-size: 40px;
 }
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
